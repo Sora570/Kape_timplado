@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+#CustomerForm{
+    display: none;
+}
+
+/* Keep header controls visible above scroll */
+.customerHeader-section,
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    position: sticky;
+    top: 0;
+    background: #fff; /* match your background */
+    z-index: 10;
+    padding: 8px 0;
+}
+
+#customerSearch {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.customerHeader-section h2{
+    margin-left: 40px;
+    font-size: 35px;
+    color: #7f5539;
+}
+
+.customerHeader-section h2 span{
+    font-size: 25px;
+    color: #b08968;
+}
+
+.add-customer-button{
+    margin-left: 55%;
+    margin-top: 5px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 20px;
+    color: white;
+    background: #b08968;
+    border: 1px solid #b08968;
+}
+
+.add-customer-button:hover{
+    cursor: pointer;
+    background: #f8e7d6;
+    color: #7f5539;
+}
+
+/* ----------------Make table scrollable horizontally ---------------- */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+/* ------------------ customer Register Form ------------------ */
+
+.customerRegisterForm{
+    display: none;
+    position: fixed; 
+}
+
+.registerForm{
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 200px;
+    border-radius: 15px;
+    height: 375px;
+    width: 600px;
+    background-color: #f8e7d6;
+}
+
+.customer-close{
+    margin-left: 550px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7f5539;
+}
+
+.customer-close:hover,
+.customer-close:focus{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 25, 25);
+}
+
+.registerForm h2{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #7f5539;
+    text-align: center;
+}
+
+.registerForm img{
+    width: 300px;
+    height: 250px;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+.customer-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: -230px;
+}
+
+.customer-form input{
+    margin-left: 310px;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    color: #7f5539;
+    background-color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.customer-form button{
+    width: 90px;
+    height: 28px;
+    margin-top: 25px;
+    margin-left: 375px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    background: #b08968;
+    border: 1px solid #b08968;
+}
+
+.customer-form button:hover{
+    cursor: pointer;
+    background: #f8e7d6;
+    color: #7f5539;
+}
+
+.customer-form-row input:focus{
+    outline: 2px solid #b08968;
+}
+
+/* ------------------ customer Details Table ------------------ */
+
+/* Table styling adjustments */
+.customer-table {
+    border-collapse: collapse;
+    min-width: 900px; /* ensures table wider than container */
+}
+
+.customer-table th,
+.customer-table td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* prevents text wrapping */
+}
+
+.customer-table th{
+    background-color: #f8e7d6;
+}
+
+.action-button{
+    height: 32px;
+    width: 90px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 9px;
+    color: white;
+    background: #b08968;
+    border: 1px solid #b08968;
+}
+
+.action-button:hover{
+    cursor: pointer;
+    background: #f8e7d6;
+    color: #7f5539;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    z-index: 9999;
+    right: 30px; 
+    top: 30px; 
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity 0.3s, top 0.3s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    top: 50px; /* Slight movement when shown */
+}
+
+.toast.success {
+    background-color: rgb(103, 231, 103);
+}
+
+.toast.error {
+    background-color: rgb(245, 111, 111);
+}
+
+/* right click menu hidden by default */
+.context-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    z-index: 1000;
+    width: 140px;
+}
+
+.context-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.context-menu li:hover {
+    background: #f2f2f2;
+}

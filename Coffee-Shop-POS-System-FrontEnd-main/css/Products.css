@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+#ProductsForm{
+    display: none;
+}
+
+.productHeader-section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.productHeader-section h2{
+    margin-left: 40px;
+    font-size: 35px;
+    color: #7f5539;
+}
+
+.productHeader-section h2 span{
+    font-size: 25px;
+    color: #b08968;
+}
+
+.add-product-button{
+    margin-left: 55%;
+    margin-top: 5px;
+    width: 130px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 20px;
+    color: white;
+    background: #b08968;
+    border: 1px solid #b08968;
+}
+
+.add-product-button:hover{
+    cursor: pointer;
+    background: #f8e7d6;
+    color: #7f5539;
+}
+
+/* ------------------ Add Product Form ------------------ */
+
+.productRegisterForm{
+    display: none;
+    position: fixed; 
+}
+
+.productRegisterForm{
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 200px;
+    border-radius: 15px;
+    height: 420px;
+    width: 600px;
+    background-color: #f8e7d6;
+}
+
+.product-close{
+    margin-left: 550px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7f5539;
+}
+
+.product-close:hover,
+.product-close:focus{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 25, 25);
+}
+
+.productRegisterForm h2{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #7f5539;
+    text-align: center;
+}
+
+.RegisterForm img{
+    width: 300px;
+    height: 250px;
+    margin-left: -5px;
+    margin-top: 25px;
+}
+
+.product-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: -260px;
+}
+
+.product-form input{
+    margin-left: 310px;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    color: #7f5539;
+    background-color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.product-form button{
+    width: 100px;
+    height: 28px;  
+    margin-top: 25px;
+    margin-left: 375px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    background: #b08968;
+    border: 1px solid #b08968;
+}
+
+.product-form button:hover{
+    cursor: pointer;
+    background: #f8e7d6;
+    color: #7f5539;
+}
+
+.product-form-row input:focus{
+    outline: 2px solid #b08968;
+}
+
+/* Style dropdowns to match text inputs (scoped to product form only) */
+.product-form select, .product-form-row select {
+    margin-left: 241px;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    color: #7f5539;
+    background-color: white;
+    border: none;
+    font-weight: 500;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff; /* match highlight color of your inputs */
+}
+/* ------------------ product Details Table ------------------ */
+.product-table{
+    width: 95%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-left: 22px;
+    margin-top: 60px;
+    color: #7f5539;
+}
+
+.product-table th,
+.product-table td{
+    padding: 10px;
+    /* border: 1px solid #b08968; */
+    text-align: center;
+
+}
+
+.product-table th{
+    background-color: #f8e7d6;
+}
+
+/* ------------------ Context menu ------------------ */
+.context-menu {
+    width: 120px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.context-menu li:hover {
+    background: #f0f0f0;
+}
+
+.table-wrapper {
+  max-height: 280px;          /* slightly shorter for compactness */
+  overflow-y: auto;           /* scroll only inside wrapper */
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;           /* white background for contrast */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Tables inside wrappers */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #333;
+}
+
+.product-table th,
+.product-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: left;
+}
+
+/* Sticky header styling */
+.product-table th {
+  background-color: #f8e7d6;
+  color: #444;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effects for rows */
+.product-table tbody tr:hover {
+  background-color: #f1f7ff;
+  cursor: pointer;
+}
+
+/* Optional: Rounded top corners for headers */
+.table-wrapper:first-child .product-table th:first-child {
+  border-top-left-radius: 10px;
+}
+.table-wrapper:first-child .product-table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+
